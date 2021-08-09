@@ -4,6 +4,7 @@
 
 ```bash
 $ git clone git@github.com:hideokamoto/serverless-nextjs-cdk-example.git
+$ cd serverless-nextjs-cdk-example
 $ yarn
 ```
 
