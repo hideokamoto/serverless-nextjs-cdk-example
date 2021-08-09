@@ -1,6 +1,6 @@
 # For AWS CKD
 *.js
-!jest.*.config.js
+!*.config.js
 *.d.ts
 node_modules
 
