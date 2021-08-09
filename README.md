@@ -3,12 +3,44 @@
 ## Getting started
 
 ```bash
+$ yarn create next-app --example https://github.com/hideokamoto/serverless-nextjs-cdk-example
+```
+
+## Local development
+
+You can run the Next.js application by the command.
+
+```bash
+$ yarn dev
+```
+
+## Deploy to AWS
+
+We need to build the CDK stack before running the deployment command.
+
+```bash
+$ yarn build
+```
+
+Then, run the CDK command.
+It will build the Next.js application automatically.
+So you don't have to run the `next build` command.
+
+```bash
+$ yarn cdk deploy
+```
+
+## Contributing
+### Getting started
+
+```bash
 $ git clone git@github.com:hideokamoto/serverless-nextjs-cdk-example.git
 $ cd serverless-nextjs-cdk-example
 $ yarn
+$ yarn cdk bootstrap
 ```
 
-## Local development (Next.js)
+### Local development (Next.js)
 
 ```bash
 $ yarn dev
@@ -25,14 +57,6 @@ $ yarn build
 $ yarn next:build
 ```
 
-## Deploy to AWS
-
-We can deploy your Next.js application to AWS using serverless nextjs and AWS CDK
-
-```bash
-$ yarn build
-$ yarn cdk deploy
-```
 
 ## [Appendix][AWS CDK] Welcome to your CDK TypeScript project!
 
