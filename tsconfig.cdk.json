@@ -23,8 +23,15 @@
       "./node_modules/@types"
     ]
   },
+  "include": [
+    "cdk",
+  ],
   "exclude": [
+    "pages",
+    "public",
+    "styles",
     "node_modules",
+    ".next",
     "cdk.out"
   ]
 }

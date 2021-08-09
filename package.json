@@ -5,22 +5,33 @@
     "serverless-nextjs-cdk-example": "bin/serverless-nextjs-cdk-example.js"
   },
   "scripts": {
+    "dev": "next dev",
+    "next:build": "next build",
+    "next:start": "next start",
+    "next:lint": "next lint",
     "cdk:build": "tsc --project tsconfig.cdk.json",
     "cdk:watch": "tsc -w --project tsconfig.cdk.json",
     "cdk:test": "jest --config=jest.cdk.config.js",
+    "next": "next",
     "cdk": "cdk"
   },
   "devDependencies": {
+    "@types/react": "17.0.16",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.0.1",
+    "typescript": "4.3.5",
     "@aws-cdk/assert": "1.117.0",
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
     "jest": "^26.4.2",
     "ts-jest": "^26.2.0",
     "aws-cdk": "1.117.0",
-    "ts-node": "^9.0.0",
-    "typescript": "~3.9.7"
+    "ts-node": "^9.0.0"
   },
   "dependencies": {
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "@aws-cdk/core": "1.117.0",
     "source-map-support": "^0.5.16"
   }

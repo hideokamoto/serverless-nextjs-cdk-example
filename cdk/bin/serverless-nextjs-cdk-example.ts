@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
-import { ServerlessNextjsCdkExampleStack } from '../cdk/serverless-nextjs-cdk-example-stack';
+import { ServerlessNextjsCdkExampleStack } from '../serverless-nextjs-cdk-example-stack';
 
 const app = new cdk.App();
 new ServerlessNextjsCdkExampleStack(app, 'ServerlessNextjsCdkExampleStack', {
