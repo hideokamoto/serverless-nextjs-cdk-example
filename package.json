@@ -6,6 +6,7 @@
   },
   "scripts": {
     "dev": "next dev",
+    "build": "npm run next:build && npm run cdk:build",
     "next:build": "next build",
     "next:start": "next start",
     "next:lint": "next lint",
