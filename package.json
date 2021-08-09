@@ -5,9 +5,9 @@
     "serverless-nextjs-cdk-example": "bin/serverless-nextjs-cdk-example.js"
   },
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "test": "jest",
+    "cdk:build": "tsc --project tsconfig.cdk.json",
+    "cdk:watch": "tsc -w --project tsconfig.cdk.json",
+    "cdk:test": "jest --config=jest.cdk.config.js",
     "cdk": "cdk"
   },
   "devDependencies": {
